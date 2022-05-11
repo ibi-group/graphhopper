@@ -52,6 +52,7 @@ public class OSMAccessParser implements TagParser {
         this.transportationMode = transportationMode;
 
         restrictedValues.add("bus");
+        restrictedValues.add("psv");
 
         restrictedValues.add("agricultural");
         restrictedValues.add("forestry");
