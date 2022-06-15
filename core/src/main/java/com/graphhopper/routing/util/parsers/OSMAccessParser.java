@@ -71,7 +71,6 @@ public class OSMAccessParser implements TagParser {
         intendedValues.add("permissive");
         intendedValues.add("no");
 
-
         oppositeLanes.add("opposite");
         oppositeLanes.add("opposite_lane");
         oppositeLanes.add("opposite_track");
@@ -92,7 +91,7 @@ public class OSMAccessParser implements TagParser {
         if (countryRule != null)
             accessValue = countryRule.getAccess(way, transportationMode, accessValue);
 
-        boolean access = accessValue != RoadAccess.NO;
+        boolean access = true; //accessValue != RoadAccess.NO;
         accessEnc.setBool(false, edgeFlags, access);
 
         if (access) {
