@@ -69,6 +69,8 @@ public class OSMAccessParser implements TagParser {
         intendedValues.add("designated");
         intendedValues.add("official");
         intendedValues.add("permissive");
+        intendedValues.add("no");
+
 
         oppositeLanes.add("opposite");
         oppositeLanes.add("opposite_lane");
