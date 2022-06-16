@@ -68,32 +68,33 @@ public class CarTagParser extends VehicleTagParser {
         super(accessEnc, speedEnc,
                 properties.getString("name", "car"), roundaboutEnc,
                 turnCostEnc, transportationMode, maxPossibleSpeed);
-        restrictedValues.add("agricultural");
-        restrictedValues.add("forestry");
-        restrictedValues.add("no");
-        restrictedValues.add("restricted");
-        restrictedValues.add("delivery");
-        restrictedValues.add("military");
-        restrictedValues.add("emergency");
-        restrictedValues.add("private");
+//        restrictedValues.add("agricultural");
+//        restrictedValues.add("forestry");
+//        restrictedValues.add("no");
+//        restrictedValues.add("restricted");
+//        restrictedValues.add("delivery");
+//        restrictedValues.add("military");
+//        restrictedValues.add("emergency");
+//        restrictedValues.add("private");
 
         blockPrivate(properties.getBool("block_private", true));
         blockFords(properties.getBool("block_fords", false));
 
         intendedValues.add("yes");
+        intendedValues.add("no");
         intendedValues.add("designated");
         intendedValues.add("permissive");
 
-        barriers.add("kissing_gate");
-        barriers.add("fence");
-        barriers.add("bollard");
-        barriers.add("stile");
-        barriers.add("turnstile");
-        barriers.add("cycle_barrier");
-        barriers.add("motorcycle_barrier");
-        barriers.add("block");
-        barriers.add("bus_trap");
-        barriers.add("sump_buster");
+//        barriers.add("kissing_gate");
+//        barriers.add("fence");
+//        barriers.add("bollard");
+//        barriers.add("stile");
+//        barriers.add("turnstile");
+//        barriers.add("cycle_barrier");
+//        barriers.add("motorcycle_barrier");
+//        barriers.add("block");
+//        barriers.add("bus_trap");
+//        barriers.add("sump_buster");
 
         badSurfaceSpeedMap.add("cobblestone");
         badSurfaceSpeedMap.add("grass_paver");
